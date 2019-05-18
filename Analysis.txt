@@ -40,7 +40,7 @@
 # The complexity of the program is in O(n). The sizes of the two sets of indexes
 # are two constants c1 and c2 (in this case c1 = 1, as only the 0th column needs
 # to be checked for calls, and c2 = 3, as the 1st column needs to be checked for calls,
-# the 0th and the 1st column need to be checked for texts), and we need to add
+# the 0th and the 1st columns need to be checked for texts), and we need to add
 # each number for each of the records in both calls and texts. As the add method
 # of a set can be seen as nearly constant, the complexity of the program is
 # roughly O(c1*n + c2*n) = O(n).
