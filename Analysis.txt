@@ -5,27 +5,27 @@
 
 # TASK 1
 # The complexity of the program is in O(n). The size of the set of indexes
-# is a constaint c (in this case c = 2, as only the 0th and the 1st columns are
+# is a constant c (in this case c = 2, as only the 0th and the 1st columns are
 # numbers), and we need to add c numbers for each of the n records. As the add
-# method of a set can be seen as nearly constant, the complextity of the program
+# method of a set can be seen as nearly constant, the complexity of the program
 # is roughly O(cn) = O(n).
 
 
 # TASK 2
 # The complexity of the program is in O(n). The size of the set of indexes
-# is a constaint c (in this case c = 2, as only the 0th and the 1st columns are
+# is a constant c (in this case c = 2, as only the 0th and the 1st columns are
 # numbers), and we need to add the duration for c numbers for each of the n
 # records. As the get method of a dictionary can be seen as nearly constant,
-# the complextity of the program is roughly O(cn) = O(n).
+# the complexity of the program is roughly O(cn) = O(n).
 
 
 # TASK 3
 # The complexity of the program is in O(n). The size of the set of indexes
-# is a constaint c (in this case c = 2, as only the 0th and the 1st columns are
+# is a constant c (in this case c = 2, as only the 0th and the 1st columns are
 # numbers), and we need to add the area code for c numbers for each of the n
 # records. When computing the percentage, we need to check, in the worst case, c
 # numbers for each record. As the add method of a set can be seen as nearly
-# constant, the complextity of the program is roughly O(cn + cn) = O(n).
+# constant, the complexity of the program is roughly O(cn + cn) = O(n).
 
 
 # TASK 4
@@ -33,13 +33,14 @@
 # TASK 4 and NOT from TASK 3 (otherwise it would be debatable if numbers that
 # starts with area code 140 are "possible" telemarketers, as they're "definitely"
 # telemarketers according to TASK 3)
-# Another reason for doing this is that the company probaly want to identify non-obvious
+# Another reason for doing this is that the company probably want to identify non-obvious
 # telemarketers, and not obvious telemarketers that starts with a certain area code.
 # To summarize, no assumption on the area code of telemarketers is made.
 # Time complexity:
 # The complexity of the program is in O(n). The sizes of the two sets of indexes
-# are two constants c1 and c2 (in this case c1 = 1, as only the 1st column needs
-# to be added for calls, and c2 = 2, as both the 0th and the 1st column
-# need to be checked for texts), and we need to add each number for each of the
-# records in both calls and texts. As the add method of a set can be seen as
-# nearly constant, the complextity of the program is roughly O(c1*n + c2*n) = O(n).
+# are two constants c1 and c2 (in this case c1 = 1, as only the 0th column needs
+# to be added for calls, and c2 = 3, as the 1st column needs to be added for calls,
+# the 0th and the 1st column need to be checked for texts), and we need to add
+# each number for each of the records in both calls and texts. As the add method
+# of a set can be seen as nearly constant, the complexity of the program is
+# roughly O(c1*n + c2*n) = O(n).
