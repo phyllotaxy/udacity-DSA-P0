@@ -25,14 +25,14 @@ Print a message:
 The list of numbers should be print out one per line in lexicographic order with no duplicates.
 """
 
-from Task1 import update_number_set
+from Task1 import collect_elems
 
 def main():
     out_call_set = set()
-    out_call_set = update_number_set(out_call_set, calls, 0)
+    out_call_set = collect_elems(out_call_set, calls, 0)
     other_set = set()
-    other_set = update_number_set(other_set, calls, 1)
-    other_set = update_number_set(other_set, texts, 0, 1)
+    other_set = collect_elems(other_set, calls, 1)
+    other_set = collect_elems(other_set, texts, 0, 1)
     print('These numbers could be telemarketers: ')
     for number in sorted(out_call_set.difference(other_set)):
         print(number)
