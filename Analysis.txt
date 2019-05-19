@@ -44,3 +44,9 @@
 # each number for each of the records in both calls and texts. As the add method
 # of a set can be seen as nearly constant, the complexity of the program is
 # roughly O(c1*n + c2*n) = O(n).
+
+# Remark: In TASK 3 and TASK 4, we also need to conducer the complexity of the sort
+# function. The problem here is that the sort function is performed on sets, but
+# the set does not grow linearly with the input size in average case. But in
+# the worst case, it does grow linearly with the input size. In any case, it
+# does not change the overall complexity.

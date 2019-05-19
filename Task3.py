@@ -79,7 +79,7 @@ def main():
     for code in sorted(banga_set):
         print(code)
     print(('{} percent of calls from fixed lines in Bangalore are calls to other '
-           'fixed lines in Bangalore.').format(compute_banga_in_out_percentage(calls, 0, 1)))
+           'fixed lines in Bangalore.').format(round(compute_banga_in_out_percentage(calls, 0, 1), 2)))
 
 if __name__ == '__main__':
     main()
